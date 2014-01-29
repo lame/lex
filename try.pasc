@@ -1,0 +1,25 @@
+(* this file contains some random token *)
+begin
+100.200
+100.001e001
+100.001e-2
+100.001e2
+100.001e+2
+abcd1111abc
+aaaa123
+abc12a
+'\t'
+'\n'
+1000
+'aslkdjf\'aksjf'
+00.09
+is
+'askasdfj\nlkasjdf'
+'aa\tbbb'
+INTeger
+FLOat
+end
+10213.
+.111
+
+
