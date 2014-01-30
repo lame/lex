@@ -24,7 +24,7 @@ char output1[100][20]={"EOFtoken", "SEMItoken", "COLONtoken", "COMMAtoken",
      "RECORDtoken", "REPEATtoken", "RETURNtoken", 
      "THENtoken", "TOtoken", "TYPEtoken",
      "UNTILtoken", "VARtoken", "WHILEtoken", "FCONSTtoken",
-     "BEGINtoken", "FLOATtoken"};
+		       "BEGINtoken", "FLOATtoken", "PRINTtoken"};
 
 main()
 {
