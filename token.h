@@ -1,3 +1,5 @@
+#ifndef TOKENH
+#define TOKENH 1
 #define EOFnumber 1
 #define SEMInumber 2
 #define COLONnumber 3
@@ -57,3 +59,4 @@
 #define BEGINnumber 57
 #define FLOATnumber 58
 #define PRINTnumber 59
+#endif

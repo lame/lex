@@ -1,0 +1,12 @@
+to use:
+
+make:
+	will compile the lexer.l, token.h and driver.cpp
+Executable:
+	will be a.out
+
+To use:
+	./a.out < input
+
+Thanks, 
+Ryan
