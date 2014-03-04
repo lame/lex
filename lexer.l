@@ -59,24 +59,24 @@ int yyline = 1, yycolumn = 1;
 																					 yycolumn += yyleng;  return (FCONSTnumber);}
 
 "(*"								BEGIN(COMMENT);
-<COMMENT>[^)*\n]+					++yycolumn;
+<COMMENT>[^)*\n]+						++yycolumn;
 <COMMENT>\n 						++yyline; yycolumn=1;
 <COMMENT>"*)"						BEGIN(INITIAL);
 <COMMENT><<EOF>>					cout << "Unmatched comment on line: " << yyline << ", column: " << yycolumn << endl;
 <COMMENT>[*)]						
 
-";"									{yycolumn += yyleng; return (SEMInumber);}
-":"									{yycolumn += yyleng; return (COLONnumber);}
-","									{yycolumn += yyleng; return (COMMAnumber);}
-"."									{yycolumn += yyleng; return (DOTnumber);}
-"("									{yycolumn += yyleng; return (LPARENnumber);}
-")"									{yycolumn += yyleng; return	(RPARENnumber);}
-"<"									{yycolumn += yyleng; return (LTnumber);}
-">"									{yycolumn += yyleng; return (GTnumber);}
-"="									{yycolumn += yyleng; return (EQnumber);}
-"-"									{yycolumn += yyleng; return (MINUSnumber);}
-"+"									{yycolumn += yyleng; return (PLUSnumber);}
-"*"									{yycolumn += yyleng; return (TIMESnumber);}
+";"			{yycolumn += yyleng; return (SEMInumber);}
+":"			{yycolumn += yyleng; return (COLONnumber);}
+","			{yycolumn += yyleng; return (COMMAnumber);}
+"."			{yycolumn += yyleng; return (DOTnumber);}
+"("			{yycolumn += yyleng; return (LPARENnumber);}
+")"			{yycolumn += yyleng; return	(RPARENnumber);}
+"<"			{yycolumn += yyleng; return (LTnumber);}
+">"			{yycolumn += yyleng; return (GTnumber);}
+"="			{yycolumn += yyleng; return (EQnumber);}
+"-"			{yycolumn += yyleng; return (MINUSnumber);}
+"+"			{yycolumn += yyleng; return (PLUSnumber);}
+"*"			{yycolumn += yyleng; return (TIMESnumber);}
 ".."								{yycolumn += yyleng; return (DOTDOTnumber);}
 ":="								{yycolumn += yyleng; return (COLEQnumber);}
 "<="								{yycolumn += yyleng; return (LEnumber);}

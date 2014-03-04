@@ -1,8 +1,0 @@
-PROGRAM hello IS
-
-BEGIN
-
-    write('hello world\n')
-
-END.
-
